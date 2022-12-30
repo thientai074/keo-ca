@@ -331,22 +331,7 @@ export default {
               this.y +=
                 this.moveSpeed * Math.sin((this.owner.angle * Math.PI) / 180);
             }
-          }
-
-          var fishImg = new Image();
-          fishImg.src = "img/__red_cartoon_fish_01_swim.png";
-          if (this.size == 1)
-            ctx.drawImage(
-              fishImg,
-              this.frameX * this.spriteWidth,
-              this.frameY * this.spriteHeight,
-              this.spriteWidth,
-              this.spriteHeight,
-              this.x - 60,
-              this.y - 70,
-              this.spriteWidth / 3,
-              this.spriteWidth / 3
-            );
+          }   
         },
       };
 
